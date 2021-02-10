@@ -1,4 +1,4 @@
-@import "./media.sass","./var.sass"
+@import "./var.sass"
 
 *
 	box-sizing: border-box
@@ -29,6 +29,8 @@ body
 	font-size: 16px
 	font-weight: 700
 	border-radius: 3px
+	user-select: none
+	cursor: pointer
 	&.disabled
 		background: $main-color
 		color: #000
@@ -68,3 +70,5 @@ body
 	background-size: contain
 	background-position: center center
 	background-repeat: no-repeat
+
+@import "./media.sass"
