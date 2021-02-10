@@ -71,7 +71,7 @@ function initProducts() {
 
     const img = document.createElement("img");
     img.classList.add("imgPicture");
-    img.setAttribute("src", "../img/1.png");
+    img.setAttribute("src", "../img/tovar.jpg");
     img.setAttribute("alt", i.productName);
     imgInner.append(img);
 
