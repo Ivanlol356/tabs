@@ -1,0 +1,169 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1980px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh; }
+
+.main {
+  max-height: 500px;
+  color: #5a5a5a;
+  background: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.tab {
+  padding: 5px 10px;
+  border: 2px solid #7f7f7f;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer; }
+  .tab.disabled {
+    background: #5a5a5a;
+    color: #000; }
+  .tab.active {
+    background: #fff;
+    display: block; }
+  .tab:hover {
+    background: #fff; }
+
+.contentBlock {
+  border: 4px solid #7f7f7f;
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 350px;
+  display: none; }
+
+.tab, .contentBlock {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.product {
+  width: 100px;
+  height: 70px;
+  margin: 10px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.imgBlock {
+  padding: 0;
+  margin: 0; }
+
+.imgPicture {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+@media (min-width: 578px) and (max-width: 768px) {
+  .main {
+    width: 100%; }
+  .tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .tab {
+    padding: 3px 6px;
+    margin: 0px 2%;
+    font-size: 14px; }
+  .contentBlock {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .product {
+    width: 50%;
+    padding-top: 20px; }
+  .main, .contentBlock, .imgBlock {
+    padding: 0;
+    margin: 0; } }
+
+@media (min-width: 320px) and (max-width: 577px) {
+  .main {
+    width: 100%; }
+  .tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .tab {
+    padding: 3px;
+    margin: 0 2%;
+    font-size: 12px; }
+  .contentBlock {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .product {
+    width: 50%;
+    padding-top: 10px; }
+  .main, .contentBlock, .imgBlock {
+    padding: 0;
+    margin: 0; } }
